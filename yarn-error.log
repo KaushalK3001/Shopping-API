@@ -12,7 +12,7 @@ Node version:
 
 Platform: 
   darwin arm64
-
+ 
 Trace: 
   SyntaxError: /Users/kaushalk/Desktop/ShoppingAPI/package.json: Unexpected token } in JSON at position 143
       at JSON.parse (<anonymous>)
