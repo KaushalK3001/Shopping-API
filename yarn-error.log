@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/bin/yarn start
+  /usr/local/bin/node /usr/local/bin/yarn add crypto-js --no-cache
 
 PATH: 
   /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/kaushalk/opt/anaconda3/bin:/Users/kaushalk/opt/anaconda3/condabin
@@ -12,14 +12,19 @@ Node version:
 
 Platform: 
   darwin arm64
- 
+
 Trace: 
-  SyntaxError: /Users/kaushalk/Desktop/ShoppingAPI/package.json: Unexpected token } in JSON at position 143
-      at JSON.parse (<anonymous>)
-      at /usr/local/lib/node_modules/yarn/lib/cli.js:1629:59
+  TypeError: Invalid number of spaces
+      at tokenise (/usr/local/lib/node_modules/yarn/lib/cli.js:63366:17)
+      at tokenise.next (<anonymous>)
+      at Parser.next (/usr/local/lib/node_modules/yarn/lib/cli.js:63472:28)
+      at Parser.parse (/usr/local/lib/node_modules/yarn/lib/cli.js:63520:30)
+      at Parser.parse (/usr/local/lib/node_modules/yarn/lib/cli.js:63596:26)
+      at parse (/usr/local/lib/node_modules/yarn/lib/cli.js:63696:21)
+      at module.exports.exports.default (/usr/local/lib/node_modules/yarn/lib/cli.js:63258:96)
+      at Function.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:3068:63)
       at Generator.next (<anonymous>)
       at step (/usr/local/lib/node_modules/yarn/lib/cli.js:310:30)
-      at /usr/local/lib/node_modules/yarn/lib/cli.js:321:13
 
 npm manifest: 
   {
@@ -28,7 +33,7 @@ npm manifest:
     "description": "",
     "main": "index.js",
     "scripts": {
-      "start" : "nodemon index.js",
+      "start" : "nodemon index.js"
     },
     "keywords": [],
     "author": "",
@@ -58,7 +63,7 @@ Lockfile:
     version "7.0.0"
     resolved "https://registry.yarnpkg.com/@types/webidl-conversions/-/webidl-conversions-7.0.0.tgz#2b8e60e33906459219aa587e9d1a612ae994cfe7"
     integrity sha512-xTE1E+YF4aWPJJeUzaZI5DRntlkY3+BCVJi0axFptnjGmAoWxkyREIh/XMrfxVLejwQxMCfDXdICo0VLxThrog==
-  
+   
   "@types/whatwg-url@^8.2.1":
     version "8.2.2"
     resolved "https://registry.yarnpkg.com/@types/whatwg-url/-/whatwg-url-8.2.2.tgz#749d5b3873e845897ada99be4448041d4cc39e63"
